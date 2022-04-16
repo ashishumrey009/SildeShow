@@ -1,0 +1,81 @@
+.carousal{
+    position: relative;
+    height: 600px;
+    width: 80%;
+    margin: 0 auto;
+}
+.carousal_image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.carousal_track-container{
+        background: lightgreen;
+        height: 100%;
+        position: relative;
+        overflow: hidden;
+}
+
+.carousal_track{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    position: relative;
+    height: 100%;
+    transition: transform 250ms ease-in;
+}
+.carousal_silde{
+    position:absolute;
+    top:0;
+    bottom: 0;
+    width: 100%;
+}
+.carousal_button{
+    position:absolute;
+    top: 50%;
+    height: 200px;
+    transform: translateY(-50%);
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+    width: auto;
+    padding: 16px;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 0 3px 3px 0;
+    transition: 0.6s ease;
+}
+
+.carousal_button img{
+    width: 12px;
+}
+.carousal_button--left{
+    left:-50px
+}
+.carousal_button--right{
+    right:-40px
+}
+.carousal_nav{
+    /* background: pink; */
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+
+}
+.carousal_indicator{
+    border: 0;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    background:rgba(0,0,0,.3);
+    margin: 0 12px;
+    cursor: pointer;
+
+}
+.carousal_indicator.current-slide{
+    background: rgba(0,0,0,.75);
+}
+.is-hidden{
+    display: none;
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vanilla Js Carousal</title>
+    <link rel="stylesheet" href="/css/style.css" >
+</head>
+<body>
+    <div class="carousal">
+        <button class="carousal_button carousal_button--left is-hidden"><img src="" alt=""><</button>
+        <div class="carousal_track-container">
+            <ul class="carousal_track">
+                <li class="carousal_silde current-slide"><img  class="carousal_image" src="https://source.unsplash.com/random?landscape,mountain" alt=""/></li>
+                <li class="carousal_silde"><img  class="carousal_image" src="https://source.unsplash.com/random?landscape,cars" alt="" /></li>
+                <li class="carousal_silde"> <img class="carousal_image"  src="https://source.unsplash.com/random?landscape,night" alt="" /></li>
+            </ul>
+        </div>
+        <button class="carousal_button carousal_button--right "><img src="" alt="">></button>
+        <div class="carousal_nav">
+            <button class="carousal_indicator current-slide"></button>
+            <button class="carousal_indicator"></button>
+            <button class="carousal_indicator"></button>
+        </div>
+    </div>
+    <script src="js/carousal.js"></script>
+</body>
+</html>
